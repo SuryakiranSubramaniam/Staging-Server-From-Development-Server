@@ -1,7 +1,7 @@
 # Staging-Server-From-Development-Server
 Staging-Server-From-Development-Server
 
-![alt text](https://github.com/SuryakiranSubramaniam/test/blob/main/image/Screenshot%20from%202022-03-12%2016-44-39.png)
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/Staging.png)
 
 ## Apache PHP Server
 
