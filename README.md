@@ -79,3 +79,23 @@ define('WP_SITEURL','https://staging.suryakiran.online' );
 
 UPDATE wp_options SET option_value = replace(option_value, 'dev.suryakiran.online', 'staging.suryakiran.online') WHERE option_name = 'home' OR option_name = 'siteurl';UPDATE wp_posts SET guid = replace(guid, 'dev.suryakiran.online','staging.suryakiran.online');UPDATE wp_posts SET post_content = replace(post_content, 'dev.suryakiran.online', 'staging.suryakiran.online'); UPDATE wp_postmeta SET meta_value = replace(meta_value,'dev.suryakiran.online','staging.suryakiran.online');
 
+## Setting Application Load Balancer
+
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/alb1.png)
+
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/alb2.png)
+
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/alb3.png)
+
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/alb4.png)
+
+## Route 53
+
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/R53.png)
+
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/R53-2.png)
+
+
+
+
+
