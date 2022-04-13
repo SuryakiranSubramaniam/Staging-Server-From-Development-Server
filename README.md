@@ -37,6 +37,12 @@ chown -R apache:apache /var/www/html/*
 
 vim /var/www/html/wp-config.php
 
+```
+/** Database hostname */
+define( 'DB_HOST', '172.31.0.28' ); # ***172.31.0.28*** Is the IP Address of DB Server
+
+```
+
 ## Log into Development-Server and take wordpress backup
 
 ~]# mysqldump -u root -p123 wordpress > wordpress.sql
@@ -52,6 +58,10 @@ mysql_secure_installation
 mysql -u root -p123
 
 >create database wordpress;
+>create user 'wordpress'@'%' identified by 'wordpress';
+>grant all privileges on wordpress.* to 'wordpress'@'%';
+>flush privileges;
+
 
 mysql -u root -p123 wordpress < wordpress.sql
 
@@ -62,6 +72,7 @@ mysql -u root -p123 wordpress < wordpress.sql
 vim /var/www/html/wp-config.php
 
 define('WP_HOME','https://staging.suryakiran.online' );
+
 define('WP_SITEURL','https://staging.suryakiran.online' );
 
 #### Option 2 (By updating wordpress database)
