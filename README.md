@@ -59,6 +59,11 @@ mysql -u root -p123 wordpress < wordpress.sql
 
 #### Option 1 (By updating wp-config.php)
 
+vim /var/www/html/wp-config.php
+
+define('WP_HOME','https://staging.suryakiran.online' );
+define('WP_SITEURL','https://staging.suryakiran.online' );
+
 #### Option 2 (By updating wordpress database)
 
 UPDATE wp_options SET option_value = replace(option_value, 'dev.suryakiran.online', 'staging.suryakiran.online') WHERE option_name = 'home' OR option_name = 'siteurl';UPDATE wp_posts SET guid = replace(guid, 'dev.suryakiran.online','staging.suryakiran.online');UPDATE wp_posts SET post_content = replace(post_content, 'dev.suryakiran.online', 'staging.suryakiran.online'); UPDATE wp_postmeta SET meta_value = replace(meta_value,'dev.suryakiran.online','staging.suryakiran.online');
