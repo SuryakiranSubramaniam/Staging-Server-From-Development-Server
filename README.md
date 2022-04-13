@@ -96,6 +96,8 @@ UPDATE wp_options SET option_value = replace(option_value, 'dev.suryakiran.onlin
 ![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/R53-2.png)
 
 
+## Attach IAM Role
+
 
 
 
