@@ -99,5 +99,17 @@ UPDATE wp_options SET option_value = replace(option_value, 'dev.suryakiran.onlin
 ## Attach IAM Role
 
 
+## Note
 
+#### Most probably uploading media files to S3 maybe not working
+
+This is due to bug in the ***Really Simple SSL*** for solving this
+
+###### In Apache PHP Server
+
+~]#rm -rf /var/www/html/wp-content/plugins/really-simple-ssl
+
+Now login to http://staging3.suryakiran.online/wp-login.php and install ***Really Simple SSL*** once again
+
+![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/IamRole.png)
 
