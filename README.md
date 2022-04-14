@@ -102,7 +102,7 @@ Atthach the Apache PHP Server with an IAM Role with ***AmazonS3FullAccess*** per
 
 ![alt text](https://github.com/SuryakiranSubramaniam/Staging-Server-From-Development-Server/blob/main/image/IamRole.png)
 
-## Note
+## Note (Warning : Dont use if this is not nesassary:)
 
 #### Most probably uploading media files to S3 maybe not working
 
@@ -114,5 +114,11 @@ This is due to bug in the ***Really Simple SSL*** for solving this
 
 Now login to http://staging3.suryakiran.online/wp-login.php and install ***Really Simple SSL*** once again
 
+###### For removing the site and database easily
 
+ ~]# rm -rf /var/www/html/*
+
+ ~]# mysql -u root -p123
+
+MariaDB [(none)]> drop database wordpress;
 
